@@ -14,11 +14,10 @@ function getRandomHexColor() {
         document.body.style.background = getRandomHexColor()
         
        
-         }, 1000,);
+         }, 1000,); 
+           btnStart.setAttribute('disabled', true)  
   });
-   if (timerId !== null) {
-            btnStart.setAttribute('disabled', true)       
-        }
+   
   
   btnStop.addEventListener('click', function onBtnClick() {
       clearInterval(timerId)
