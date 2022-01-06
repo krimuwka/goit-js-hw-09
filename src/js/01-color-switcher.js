@@ -13,12 +13,12 @@ function getRandomHexColor() {
     timerId = setInterval(() => {
         document.body.style.background = getRandomHexColor()
         
-        if (timerId !== null) {
-            btnStart.setAttribute('disabled', true)       
-        }
+       
          }, 1000,);
   });
-  
+   if (timerId !== null) {
+            btnStart.setAttribute('disabled', true)       
+        }
   
   btnStop.addEventListener('click', function onBtnClick() {
       clearInterval(timerId)
